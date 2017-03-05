@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import Program from './program';
 import Programs from './programs';
+import {Link} from 'react-router';
 
 const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
 // const ROOT_URL = "http://localhost:3000/api";
@@ -26,13 +27,12 @@ class App extends Component {
     //     };
     // }
 
-
-
     render() {
 
         return (
             <div>
-              <Programs/>
+               <Link className="btn btn-primary" to="/programs">Login ome gonorrea ome</Link>
+
 
             </div>
           )
