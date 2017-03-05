@@ -24,6 +24,9 @@ class App extends Component {
 
         return (
           <div>
+          <div className="row">
+            <Navbar/>
+          </div>
                   <h1>Simple SPA</h1>
                   <ul className="header">
                     <li>Home</li>
