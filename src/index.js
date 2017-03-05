@@ -4,15 +4,18 @@ import App from './components/app';
 import {Router,Route,Link, hashHistory} from 'react-router';
 import Programs from './components/programs';
 import Courses from './components/courses';
+import Navbar from './components/navbar';
 
 
 
 
 ReactDOM.render(
   <Router history={hashHistory} >
-    <Route path="/" component={App} />
+    <Route path="/" component={App}/>
     <Route path="/programs" component={Programs} />
-  <Route path="/programs/:programId/courses" component={Courses}/>
+    <Route path="/programs/:programId/courses" component={Courses}/>
+
+
 
 
   </Router>, document.querySelector('.container'));

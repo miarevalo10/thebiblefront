@@ -3,6 +3,7 @@ import axios from 'axios';
 import Program from './program';
 import Programs from './programs';
 import {Link} from 'react-router';
+import Navbar from './navbar';
 
 const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
 // const ROOT_URL = "http://localhost:3000/api";
@@ -17,26 +18,28 @@ class App extends Component {
     //         description: '',
     //         url: ''
     //     }
-    //     getPrograms => {
-    //         console.log(ROOT_URL + "/programs");
-    //         axios.get(ROOT_URL + "/programs").then(response => {
-    //             this.setState({programs: response.data})
-    //             // console.log("la respuesta" + response.data[0].name);
-    //         })
-    //
-    //     };
-    // }
+
 
     render() {
 
         return (
-            <div>
-               <Link className="btn btn-primary" to="/programs">Login ome gonorrea ome</Link>
+          <div>
+                  <h1>Simple SPA</h1>
+                  <ul className="header">
+                    <li>Home</li>
+                    <li>Stuff</li>
+                    <li>Contact</li>
+                  </ul>
+                  <div className="content">
+                    |
+                                  {/* <div><Link className="btn btn-primary" to="programs">Login ome gonorrea ome</Link></div> */}
+                  </div>
+                </div>
 
 
-            </div>
+
           )
-}
+    }
 }
 
 export default App;
