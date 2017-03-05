@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-// const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
-const ROOT_URL = "http://localhost:3000/api";
+const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
+// const ROOT_URL = "http://localhost:3000/api";
 
 
 class Program extends Component {
