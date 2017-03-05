@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
-// const ROOT_URL = "http://localhost:3000/api";
+// const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
+const ROOT_URL = "http://localhost:3000/api";
 
 
 class Program extends Component {
@@ -15,16 +15,18 @@ class Program extends Component {
 
   render(){
     return (
-      <div className="col-md-3 col-sm-4">
-        <div className="card" >
+      <div className="col-md-3 col-sm-4 ">
+        <div className="card">
           <div className="card-block">
             <h4 className="card-title">{this.props.program.name}</h4>
             <p className="card-text">{this.props.program.description}</p>
-          <a href={this.props.program.url} className="btn btn-primary">URL</a>
+          <a href={this.props.program.url} className="btn btn-primary cardbtn">URL</a>
           </div>
           {/* <button onClick={this.borrarEstudiante.bind(this)}>Borrar</button> */}
         </div>
+
       </div>
+
 
     );
   }
