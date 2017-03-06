@@ -37,11 +37,11 @@ class Program extends Component {
           {/* <a href={this.props.program.url} className="btn btn-primary cardbtn">URL</a> */}
 
           </div>
-          <div className="card-footer">
+          <div className="card-footer btn-group">
             <button className="btn btn-danger" onClick={this.deleteProgram.bind(this)} >
              Delete
             </button>
-            <Link className="btn btn-primary " to={'/programs/' + this.props.program._id + '/courses'}>See courses</Link>
+            <Link className="btn btn-primary " to={'/programs/' + this.props.program._id + '/courses'}>Courses</Link>
           </div>
         </div>
       </div>

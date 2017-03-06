@@ -11,7 +11,7 @@ class File extends Component {
 
   render(){
     return (
-      <div className="col-md-6 col-sm-6">
+      <div className="col-md-6 col-sm-6 col-xs-12">
         <div className="card">
           <div className="card-block">
             <h4 className="card-title">{this.props.file.name}</h4>

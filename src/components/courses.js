@@ -37,7 +37,7 @@ class Courses extends Component {
             <div className="container-fluid">
 
               <h1>Courses</h1>
-              <Link className="btn back" to={'/programs' }>Back to programs</Link>
+              <Link className="btn back" to={'/programs' }>Programs</Link><span>/  Courses</span>
 
               <hr />
 

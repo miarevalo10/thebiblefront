@@ -35,7 +35,9 @@ class Files extends Component {
         return (
             <div className="container-fluid">
               <h1>Files</h1>
-            <Link className="btn back" to={'/programs/' + this.props.params.programId + '/courses'}>Back to courses</Link>
+            <Link className="btn back" to={'/programs' }>Programs/</Link>  
+            <span><Link className="btn back" to={'/programs/' + this.props.params.programId + '/courses'}>Courses/</Link></span>
+            <span>Files</span>
 
               <hr />
             <Link className="btn" to={'/programs/' + this.props.params.programId + '/courses/' +this.props.params.courseId }>
