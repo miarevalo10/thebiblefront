@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "App to upload courses files",
   "main": "index.js",
+  "engines": {
+    "node": "6.10.0"
+  },
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
     "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
