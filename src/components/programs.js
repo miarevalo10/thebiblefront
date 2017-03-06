@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import Program from './program';
+import {Link} from 'react-router';
 
 const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
 // const ROOT_URL = "http://localhost:3000/api";
@@ -17,17 +18,6 @@ class Programs extends Component {
             _id: ''
         }
     }
-
-    addProgram() {
-        axios.post(ROOT_URL + "/programs", {
-            name: this.state.name,
-            description: this.state.description,
-            url: this.state.url
-        }).then(response => {
-            this.getPrograms();
-        })
-    }
-
     /*
   * Hace un getall para traer todos los programas en la pagina inicial
   */
@@ -47,38 +37,23 @@ class Programs extends Component {
     };
 
     render() {
-        // const {  navbar } = this.props;
         return (
 
             <div className="container-fluid">
 
               <h1>Programs</h1>
               <hr />
+                <Link className="btn" to={'/programs/add' }>
+                  <i className="fa fa-plus fa-2x btn">
+                    <span id="add">Add Program</span>
+                  </i>
+                </Link>
                 <div className="row">
-
                     {this.state.programs.map(program => {
                         return <Program key={program._id} program={program}/>
                     })}
 
                 </div>
-
-                  Name:
-                  <input type="text" value={this.state.name} onChange={(event) => {
-                      this.setState({name: event.target.value})
-                  }}/>
-
-                  Description:
-                  <input type="text" value={this.state.description} onChange={(event) => {
-                      this.setState({description: event.target.value})
-                  }}/>
-
-                  URL:
-                  <input type="text" value={this.state.url} onChange={(event) => {
-                      this.setState({url: event.target.value})
-                  }}/>
-
-
-                  <button onClick={this.addProgram.bind(this)}>Save</button>
             </div>
           )
 }
