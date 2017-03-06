@@ -16,24 +16,25 @@ class Intro extends Component {
         return (
 
             <div className="container-fluid">
-
-              <h1>Welcome</h1>
+                <div className="text-center"><i className="fa fa-fw fa-5x fa-book"></i></div>
+              <h1 className="text-center">Welcome</h1>
               <hr />
-              
-              <h3><span><i className="fa fa-book"></i></span>This is the bible app. </h3>
+              <div className="text-justified">
+              <h3>This is the bible app. </h3>
               <p>This project is a web application designed to storage academic files. The files are organized by program and course from Universidad de los Andes.</p>
               <p>The bible app allow the users create or delete an Undergraduate Program, create a Course and upload a file of any type (pdf's, png's, zip's, etc). </p>
                 <p>Also, the user can download any of the files listed by the app.</p>
                 <p>Note: avoid uploading sensitive files. These files are stored in Amazon S3</p>
 
                 <p>Click Sign in button below to use the web app.</p>
-
-                <Link className="btn col-md-offset-4 col-xs-offset-4 col-md-4 col-xs-4" to={'/programs' }>
-                  <i className="fa fa-sign-in fa-2x btn">
+                </div>
+                <div className="text-center">
+                <Link className="" to={'/programs' }>
+                  <i className="fa fa-sign-in fa-2x btn text-center">
                     <span id="add">Sign in</span>
                   </i>
                 </Link>
-                
+                </div>
             </div>
           )
 }
