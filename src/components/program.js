@@ -30,18 +30,20 @@ class Program extends Component {
   render(){
     return (
       <div className="col-md-6 col-sm-6 ">
-        <div className="card">
+        <div className="card ">
           <div className="card-block">
             <h4 className="card-title">{this.props.program.name}</h4>
             <p className="card-text">{this.props.program.description}</p>
           {/* <a href={this.props.program.url} className="btn btn-primary cardbtn">URL</a> */}
 
           </div>
-          <div className="card-footer btn-group">
-            <button className="btn btn-danger" onClick={this.deleteProgram.bind(this)} >
+          <div className=" text-center">
+          <div className=" btn-group">
+            {/* <button className="btn btn-danger" onClick={this.deleteProgram.bind(this)} >
              Delete
-            </button>
+            </button> */}
             <Link className="btn btn-primary " to={'/programs/' + this.props.program._id + '/courses'}>Courses</Link>
+          </div>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ class Course extends Component {
           <p className="card-text">{this.props.course.description}</p>
 
           </div>
-          <div className="card-footer">
+          <div className="text-center">
             <Link className="btn btn-primary" to={'/programs/' + this.props.course.program_id + '/courses/' +this.props.course._id + '/files' }>See files</Link>
           </div>
           {/* <button onClick={this.borrarEstudiante.bind(this)}>Borrar</button> */}

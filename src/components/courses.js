@@ -37,14 +37,25 @@ class Courses extends Component {
             <div className="container-fluid">
 
               <h1>Courses</h1>
-              <Link className="btn back" to={'/programs' }>Programs</Link><span>/  Courses</span>
-
               <hr />
-            <Link className="btn" to={'/programs/' + this.props.params.programId + '/addCourse' }>
+              <Link className="btn" to={'/programs/' + this.props.params.programId + '/addCourse' }>
                 <i className="fa fa-plus fa-2x btn">
                   <span id="add">Add Course</span>
                 </i>
               </Link>
+
+              <div className="row">
+                <div className="col-sm-12">
+                  <ol className="breadcrumb">
+                    <li>
+                      <Link className="" to={'/programs' }>Programs</Link>
+                    </li>
+                    <li className="active">
+                      Courses
+                    </li>
+                  </ol>
+                </div>
+              </div>
 
               <div className="row">
 
