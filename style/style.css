@@ -34,3 +34,10 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+#add{
+  font-size: 0.8em;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}

@@ -6,6 +6,8 @@ import Programs from './components/programs';
 import Courses from './components/courses';
 import Home from './components/home';
 import Files from './components/files';
+import AddFile from './components/addFile';
+
 
 
 
@@ -18,7 +20,8 @@ ReactDOM.render(
     <Route path='/' component={App}>
       <IndexRoute component={Home}/>
       <Route path='programs/:programId/courses' component={Courses}/>
-    <Route path='programs/:programId/courses/:courseId/files' component={Files}/>
+      <Route path='programs/:programId/courses/:courseId/files' component={Files}/>
+      <Route path='programs/:programId/courses/:courseId' component={AddFile}/>
 
     </Route>
 
