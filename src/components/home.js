@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Programs from './programs';
+import Intro from './intro';
 
 class Home extends Component {
     // constructor(props) {
@@ -20,7 +21,7 @@ class Home extends Component {
           {/* <div className="row">
             <Navbar/>
           </div> */}
-            <Programs/>
+            <Intro/>
                 </div>
 
 
