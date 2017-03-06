@@ -37,7 +37,7 @@ class Program extends Component {
           <a href={this.props.program.url} className="btn btn-primary cardbtn">URL</a>
 
 
-        <Link className="btn btn-primary cardbtn" to={'/programs/' + this.props.program._id + '/courses'}>Ver cursos</Link>
+        <Link className="btn btn-primary cardbtn" to={'/programs/' + this.props.program._id + '/courses'}>See courses</Link>
 
           </div>
         </div>
