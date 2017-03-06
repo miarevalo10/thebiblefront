@@ -29,7 +29,7 @@ class Program extends Component {
 
   render(){
     return (
-      <div className="col-md-3 col-sm-4 ">
+      <div className="col-md-6 col-sm-6 ">
         <div className="card">
           <div className="card-block">
             <h4 className="card-title">{this.props.program.name}</h4>
@@ -40,9 +40,7 @@ class Program extends Component {
         <Link className="btn btn-primary cardbtn" to={'/programs/' + this.props.program._id + '/courses'}>Ver cursos</Link>
 
           </div>
-          {/* <button onClick={this.borrarEstudiante.bind(this)}>Borrar</button> */}
         </div>
-
       </div>
 
 
