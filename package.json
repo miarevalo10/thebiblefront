@@ -4,6 +4,9 @@
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "engines": {
+    "node": "6.10.0"
+  },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "prod": "NODE_ENV=production node server.js",
