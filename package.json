@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "prod": "NODE_ENV=production node server.js",
-    "build": "webpack --progress -p"
+    "postinstall": "webpack -p"
   },
   "author": "",
   "license": "ISC",
