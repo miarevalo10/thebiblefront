@@ -12,7 +12,7 @@ class AddCourse extends Component {
             name: '',
             description: '',
             url: '',
-            codigo:''
+            code:''
         };
         //  this.addProgram = this.h.bind(this);
     }
@@ -22,7 +22,7 @@ class AddCourse extends Component {
             name: this.state.name,
             description: this.state.description,
             url: this.state.url,
-            codigo:this.state.codigo
+            code:this.state.code
         }).then(response => {
             console.log(this + "course added");
         })
@@ -30,28 +30,48 @@ class AddCourse extends Component {
 
     render() {
         return (
-            <div>
-                Name:
-                <input type="text" value={this.state.value} onChange={(event) => {
-                    this.setState({name: event.target.value})
-                }}/>
-
-                Description:
-                <input type="text" value={this.state.value} onChange={(event) => {
-                    this.setState({description: event.target.value})
-                }}/>
-
-              Codigo:
-                <input type="text" value={this.state.value} onChange={(event) => {
-                    this.setState({codigo: event.target.value})
-                }}/>
-
-                URL:
-                <input type="text" value={this.state.value} onChange={(event) => {
-                    this.setState({url: event.target.value})
-                }}/>
-                <button onClick={this.addCourse.bind(this)}>Save</button>
+          <div>
+          <div className="form-group">
+          <label className="control-label col-sm-2" for="nombre">Name:</label>
+            <div className="col-sm-10">
+              <input type="text" className="form-control" value={this.state.value} onChange={(event) => {
+                  this.setState({name: event.target.value})
+              }} />
             </div>
+          </div>
+          <div className="form-group">
+          <label className="control-label col-sm-2" for="description">Description:</label>
+            <div className="col-sm-10">
+              <input type="text" className="form-control"  value={this.state.value} onChange={(event) => {
+                  this.setState({description: event.target.value})
+              }} />
+            </div>
+          </div>
+          <div className="form-group">
+          <label className="control-label col-sm-2" for="url">URL:</label>
+            <div className="col-sm-10">
+              <input type="text" className="form-control"  value={this.state.value} onChange={(event) => {
+                  this.setState({url: event.target.value})
+              }}/>
+            </div>
+          </div>
+          <div className="form-group">
+          <label className="control-label col-sm-2" for="url">Code:</label>
+            <div className="col-sm-10">
+              <input type="text" className="form-control"  value={this.state.value} onChange={(event) => {
+                  this.setState({code: event.target.value})
+              }}/>
+            </div>
+          </div>
+          <div className="form-group">
+             <div className="col-sm-offset-2 col-sm-10">
+               <div className="btn-group">
+                  <button className="btn btn-success" onClick={this.addCourse.bind(this)}>Save</button>
+                <Link className="btn btn-primary" to={'/programs/' + this.props.params.programId  +'/courses'}>Go Back</Link>
+              </div>
+            </div>
+          </div>
+      </div>
 
         );
     }

@@ -40,7 +40,11 @@ class Courses extends Component {
               <Link className="btn back" to={'/programs' }>Programs</Link><span>/  Courses</span>
 
               <hr />
-
+            <Link className="btn" to={'/programs/' + this.props.params.programId + '/addCourse' }>
+                <i className="fa fa-plus fa-2x btn">
+                  <span id="add">Add Course</span>
+                </i>
+              </Link>
 
               <div className="row">
 
