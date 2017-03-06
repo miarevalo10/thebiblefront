@@ -34,6 +34,10 @@ class Files extends Component {
 
         return (
             <div className="container-fluid">
+              <h1>Files</h1>
+            <Link className="btn back" to={'/programs/' + this.props.params.programId + '/courses'}>Back to courses</Link>
+
+              <hr />
             <Link className="btn" to={'/programs/' + this.props.params.programId + '/courses/' +this.props.params.courseId }>
               <i className="fa fa-plus fa-2x btn">
                 <span id="add">Add File</span>

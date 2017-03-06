@@ -15,7 +15,10 @@ class File extends Component {
         <div className="card">
           <div className="card-block">
             <h4 className="card-title">{this.props.file.name}</h4>
-          <a href={this.props.file.drive_url} className="btn btn-primary cardbtn" target='_blank'>Download</a>
+          </div>
+          <div className="card-footer">
+            <a href={this.props.file.drive_url} className="btn btn-primary " target='_blank'>Download</a>
+
           </div>
           {/* <button onClick={this.borrarEstudiante.bind(this)}>Borrar</button> */}
          </div>

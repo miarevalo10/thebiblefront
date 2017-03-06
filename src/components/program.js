@@ -20,12 +20,12 @@ class Program extends Component {
       }
   }
 
-  // borrarPrograma() {
-  //   axios.delete(ROOT_URL+"/programs/"+this.props.estudiante.id).then(response => {
-  //     console.log(response);
-  //     console.log('Borro programa', this.props.nombre);
-  //   })
-  // }
+  deleteProgram() {
+    axios.delete(ROOT_URL+"/programs/"+this.props.program._id).then(response => {
+      console.log(response);
+      console.log('Borro programa', this.props.name);
+    })
+  }
 
   render(){
     return (
@@ -34,11 +34,14 @@ class Program extends Component {
           <div className="card-block">
             <h4 className="card-title">{this.props.program.name}</h4>
             <p className="card-text">{this.props.program.description}</p>
-          <a href={this.props.program.url} className="btn btn-primary cardbtn">URL</a>
+          {/* <a href={this.props.program.url} className="btn btn-primary cardbtn">URL</a> */}
 
-
-        <Link className="btn btn-primary cardbtn" to={'/programs/' + this.props.program._id + '/courses'}>See courses</Link>
-
+          </div>
+          <div className="card-footer">
+            <button className="btn btn-danger" onClick={this.deleteProgram.bind(this)} >
+             Delete
+            </button>
+            <Link className="btn btn-primary " to={'/programs/' + this.props.program._id + '/courses'}>See courses</Link>
           </div>
         </div>
       </div>

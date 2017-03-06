@@ -96,7 +96,7 @@ class AddFile extends Component{
             <h1>Add new files</h1>
             <hr />
             <h2>Your file</h2>
-          <input className="btn btn-default " type="file" id="file-input"  onChange={this.initUpload.bind(this)}/>
+            <input className="btn btn-default " type="file" id="file-input"  onChange={this.initUpload.bind(this)}/>
             <p id="status">Please select a file</p>
             <button className="btn btn-primary " onClick={this.addFile.bind(this)}>Save</button>
             <Link className="btn btn-primary " to={'/programs/' + this.props.params.programId + '/courses/' +this.props.params.courseId + '/files' }>Go Back</Link>

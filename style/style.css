@@ -26,13 +26,10 @@
     position: relative;
     padding-bottom: 40px;
 }
-.cardbtn{
-  position: absolute;
-    bottom: 10px;
-    left: 50%;
-    -ms-transform:: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+.back{
+
+    display: inline-block;;
+
 }
 #add{
   font-size: 0.8em;

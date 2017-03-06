@@ -21,8 +21,9 @@ class Course extends Component {
             <h4 className="card-title">{this.props.course.name}</h4>
           <p className="card-text">{this.props.course.description}</p>
 
-        <Link className="btn btn-primary cardbtn" to={'/programs/' + this.props.course.program_id + '/courses/' +this.props.course._id + '/files' }>See files</Link>
-
+          </div>
+          <div className="card-footer">
+            <Link className="btn btn-primary" to={'/programs/' + this.props.course.program_id + '/courses/' +this.props.course._id + '/files' }>See files</Link>
           </div>
           {/* <button onClick={this.borrarEstudiante.bind(this)}>Borrar</button> */}
          </div>
