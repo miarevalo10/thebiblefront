@@ -4,7 +4,8 @@
   "description": "App to upload courses files",
   "main": "index.js",
   "engines": {
-    "node": "6.10.0"
+    "node": "6.10.0",
+    "npm" : "4.3.0"
   },
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
     "scripts": {
@@ -41,6 +42,8 @@
     "react-router": "^2.0.1",
     "react-router-bootstrap": "^0.23.1",
     "redux": "^3.0.4",
-    "youtube-api-search": "0.0.5"
+    "youtube-api-search": "0.0.5",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   }
 }
