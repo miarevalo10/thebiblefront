@@ -26,6 +26,8 @@ class AddCourse extends Component {
         }).then(response => {
             console.log(this + "course added");
         })
+        // After adding a course, the page should return to the main view, or display
+        // a confirmation message.
     }
 
     render() {
