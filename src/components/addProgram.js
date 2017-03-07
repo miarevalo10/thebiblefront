@@ -33,7 +33,7 @@ class AddProgram extends Component{
 
   render() {
     return (
-          <div>
+          <div className="form-horizontal">
           <div className="form-group">
           <label className="control-label col-sm-2" for="nombre">Name:</label>
             <div className="col-sm-10">
@@ -45,7 +45,7 @@ class AddProgram extends Component{
           <div className="form-group">
           <label className="control-label col-sm-2" for="description">Description:</label>
             <div className="col-sm-10">
-              <input type="text" className="form-control"  value={this.state.value} onChange={(event) => {
+              <input type="text" placeholder="SNIES: xxx programa de 8 semestres..." className="form-control"  value={this.state.value} onChange={(event) => {
                   this.setState({description: event.target.value})
               }} />
             </div>
@@ -53,7 +53,7 @@ class AddProgram extends Component{
           <div className="form-group">
           <label className="control-label col-sm-2" for="url">URL:</label>
             <div className="col-sm-10">
-              <input type="text" className="form-control"  value={this.state.value} onChange={(event) => {
+              <input type="text" placeholder="https://url.uniandes.edu.co" className="form-control"  value={this.state.value} onChange={(event) => {
                   this.setState({url: event.target.value})
               }}/>
             </div>
@@ -61,7 +61,9 @@ class AddProgram extends Component{
           <div className="form-group">
              <div className="col-sm-offset-2 col-sm-10">
                <div className="btn-group">
-                  <button className="btn btn-success" onClick={this.addProgram.bind(this)}>Save</button>
+                  <button className="btn btn-success" onClick={this.addProgram.bind(this)}>
+                    Save
+                  </button>
                   <Link className="btn btn-primary" to={'/programs' }>Go Back</Link>
               </div>
             </div>

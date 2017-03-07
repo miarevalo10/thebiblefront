@@ -95,11 +95,13 @@ class AddFile extends Component{
       <div>
             <h1>Add file</h1>
             <hr />
-            <input className="btn btn-default form-control" type="file" id="file-input"  onChange={this.initUpload.bind(this)}/>
-            <p id="status">Please select a file</p>
+            <input className="btn btn-default btn-file form-control" type="file" id="file-input"  onChange={this.initUpload.bind(this)}/>
+            
+            <div className="text-center">
             <div className="btn-group">
               <button className="btn btn-success " onClick={this.addFile.bind(this)}>Save</button>
               <Link className="btn btn-primary " to={'/programs/' + this.props.params.programId + '/courses/' +this.props.params.courseId + '/files' }>Go Back</Link>
+            </div>
             </div>
 
         </div>
