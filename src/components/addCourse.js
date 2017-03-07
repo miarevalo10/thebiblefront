@@ -25,6 +25,7 @@ class AddCourse extends Component {
             code:this.state.code
         }).then(response => {
             console.log(this + "course added");
+            alert(response.data.message);
         })
     }
 

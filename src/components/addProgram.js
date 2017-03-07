@@ -26,6 +26,8 @@ class AddProgram extends Component{
        url: this.state.url
    }).then(response => {
        console.log(this.state + "program added");
+       console.log(response);
+       alert(response.data.message);
    })
  }
 
