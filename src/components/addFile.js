@@ -20,7 +20,9 @@ class AddFile extends Component{
       }
   }
 
+  // Its a great idea to upload the files into S3
   addFile() {
+    // Do not forget to remove these stdout logs.
     console.log(ROOT_URL + "/api/upload");
     console.log(this);
     console.log(this.state.files[0].name);
@@ -57,6 +59,7 @@ class AddFile extends Component{
     }
   };
   xhr.send(file);
+    //After uploading a file, it should be possible to return to the main course view.
   }
 
 
