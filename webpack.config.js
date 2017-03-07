@@ -1,3 +1,5 @@
+
+// Do not forget to minify your bundle.js, especially when the project is not deployed on Heroku
 module.exports = {
   entry: [
     './src/index.js'
