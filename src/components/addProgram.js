@@ -37,7 +37,7 @@ class AddProgram extends Component{
           <div className="form-group">
           <label className="control-label col-sm-2" for="nombre">Name:</label>
             <div className="col-sm-10">
-              <input type="text" className="form-control" value={this.state.value} onChange={(event) => {
+              <input type="text" placeholder="Ingeniería Eléctrica" className="form-control" value={this.state.value} onChange={(event) => {
                   this.setState({name: event.target.value})
               }} />
             </div>
