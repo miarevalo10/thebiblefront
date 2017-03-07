@@ -38,11 +38,7 @@ class Courses extends Component {
 
               <h1>Courses</h1>
               <hr />
-              <Link className="btn" to={'/programs/' + this.props.params.programId + '/addCourse' }>
-                <i className="fa fa-plus fa-2x btn">
-                  <span id="add">Add Course</span>
-                </i>
-              </Link>
+             
 
               <div className="row">
                 <div className="col-sm-12">
@@ -56,6 +52,12 @@ class Courses extends Component {
                   </ol>
                 </div>
               </div>
+
+               <Link className="btn" to={'/programs/' + this.props.params.programId + '/addCourse' }>
+                <i className="fa fa-plus fa-2x btn">
+                  <span id="add">Add Course</span>
+                </i>
+              </Link>
 
               <div className="row">
 
