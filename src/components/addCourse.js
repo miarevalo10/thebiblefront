@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router';
 
+// Maybe its better to extract this value to an Environment Variable?
+// Just in case the backend is moved to another server or URL
 const ROOT_URL = "https://thebibleapp.herokuapp.com/api";
 
 class AddCourse extends Component {
