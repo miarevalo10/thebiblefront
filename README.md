@@ -160,3 +160,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+
+##Comentarios
+
+En general me parece que se hizo un buen trabajo, para mi fue mas clara la organización del front end que del backend y en algunos archivos hay codigo comentado inutilizado que sería bueno limpiar. Seria excelente que agregaran la funcionalidad de subir y mostrar parciales viejos de las materias con sus soluciones, o tareas con soluciones organizados por tema para encontrarlos mas facil. Tambien me pareces que seria mejor una barra de navegacion para que sea más clara la estructura de la página y se pueda navegar más facilmente. De resto esta bien la idea y la página.
